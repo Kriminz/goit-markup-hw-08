@@ -1,0 +1,22 @@
+.footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  background-color: var(--hero-footer-bgc);
+}
+
+.footer__container--flex {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__main{
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 62px;
+  }
+}

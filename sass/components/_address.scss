@@ -1,0 +1,27 @@
+.address {
+  font-style: normal;
+}
+
+.address__building {
+  color: var(--second-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.address__list {
+  margin-top: 28px;
+  display: block;
+}
+
+.address__type:not(:first-child) {
+  margin-top: 12px;
+}
+
+.address__cont {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}

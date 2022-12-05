@@ -1,0 +1,31 @@
+.filter {
+  margin-bottom: 50px;
+
+  justify-content: center;
+    
+    @media screen and (min-width: 768px) {
+      &__type:not(:first-child) {
+        margin-left: 8px;
+      }
+    }
+}
+
+.filter{
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    row-gap: 15px;
+    margin-left: -8px;
+
+    justify-content: start;
+
+    &__type{
+      margin-left: 8px;
+    }
+  }
+}
+
+.filter__type:nth-child(3n){
+  @media screen and (max-width: 767px) {
+    margin-right: 25px;
+  }
+}
