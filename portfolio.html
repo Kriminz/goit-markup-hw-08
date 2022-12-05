@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <!--Навігація-->
+        <div class="container container--flex">
+            <nav class="nav">
+                <a class="logo logo--smal" href="#"><span class="logo--blue">Web</span>Studio</a>
+                <ul class="nav__list">
+                    <li class="nav__type"><a href="./index.html" class="link nav__link">Студія</a>
+                    </li>
+                    <li class="nav__type"><a href="./portfolio.html"
+                            class="link nav__link  nav__link--current">Портфоліо</a></li>
+                    <li class="nav__type"><a href="#" class="link nav__link ">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                    <use class="menu__icon-menu" href="./img/icons.svg#mobile-menu"></use>
+                </svg>
+            </button>
+
+            <div class="page-header__cont">
+                <a href="mailto:info@devstudio.com" class="link page-header__link">
+                    <svg class="page-header__icon" width="16" height="12">
+                        <use href="./img/icons.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+                <a href="tel:+380961111111" class="link page-header__link">
+                    <svg class="page-header__icon" width="10" height="16">
+                        <use href="./img/icons.svg#icon-phone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="hide">Проекти</h1>
+
+                <!--Фільтр пошуку-->
+                <h2 class="hide">Фільтр</h2>
+                <ul class="filter">
+                    <li class="filter__type"><button type="button"
+                            class="button filter__btn filter__btn--active">Усі</button></li>
+                    <li class="filter__type"><button type="button" class="button filter__btn">Веб-сайти</button></li>
+                    <li class="filter__type"><button type="button" class="button filter__btn">Додатки</button></li>
+                    <li class="filter__type"><button type="button" class="button filter__btn">Дизайн</button></li>
+                    <li class="filter__type"><button type="button" class="button filter__btn">Маркетинг</button></li>
+                </ul>
+
+                <!--Проекти-->
+                <h2 class="hide">Список проектів</h2>
+                <ul class="projects">
+                    <li class="projects__type">
+                        <a href="#">
+                            <div class="box">
+                                <img class="projects__img" srcset="./img/projec/phone/pp1x.jpg 450w , 
+                                ./img/projec/phone/pp2x.jpg 900w, 
+                                ./img/projec/tablet/pt1x.jpg 354w, 
+                                ./img/projec/tablet/pt2x.jpg 708w, 
+                                ./img/projec/pd1x.jpg 370w, 
+                                ./img/projec/pd2x.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                    src="./img/projec/pd1x.jpg" alt="Проект 1">
+                                <div class="projects__overlay overlay">
+                                    <p class="overlay__title">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу
+                                        та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про
+                                        компанію
+                                        чи приватну особу.</p>
+                                </div>
+                            </div>
+                            <div class="projects__notes">
+                                <h3 class="projects__title">Технокряк</h3>
+                                <p class="description">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__type">
+                        <a href="#">
+                            <img class="projects__img" srcset="./img/projec/phone/pp1x-1.jpg 450w , 
+                            ./img/projec/phone/pp2x-1.jpg 900w, 
+                            ./img/projec/tablet/pt1x-1.jpg 354w, 
+                            ./img/projec/tablet/pt2x-1.jpg 708w, 
+                            ./img/projec/pd1x-1.jpg 370w, 
+                            ./img/projec/pd2x-1.jpg 740w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="./img/projec/pd1x-1.jpg" alt="Проект 2">
+                            <div class="projects__notes">
+                                <h3 class="projects__title">Постер New Orlean vs Golden Star</h3>
+                                <p class="description">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__type">
+                        <a href="#">
+                            <img class="projects__img" srcset="./img/projec/phone/pp1x-2.jpg 450w , 
+                            ./img/projec/phone/pp2x-2.jpg 900w, 
+                            ./img/projec/tablet/pt1x-2.jpg 354w, 
+                            ./img/projec/tablet/pt2x-2.jpg 708w, 
+                            ./img/projec/pd1x-2.jpg 370w, 
+                            ./img/projec/pd2x-2.jpg 740w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="./img/projec/pd1x-2.jpg" alt="Проект 3">
+                            <div class="projects__notes">
+                                <h3 class="projects__title">Ресторан Seafood</h3>
+                                <p class="description">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__type">
+                        <a href="#">
+                            <img class="projects__img" srcset="./img/projec/phone/pp1x-3.jpg 450w , 
+                            ./img/projec/phone/pp2x-3.jpg 900w, 
+                            ./img/projec/tablet/pt1x-3.jpg 354w, 
+                            ./img/projec/tablet/pt2x-3.jpg 708w, 
+                            ./img/projec/pd1x-3.jpg 370w, 
+                            ./img/projec/pd2x-3.jpg 740w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="./img/projec/pd1x-3.jpg" alt="Проект 4">
+                            <div class="projects__notes">
+                                <h3 class="projects__title">Проєкт Prime</h3>
+                                <p class="description">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__type">
+                        <a href="#">
+                            <img class="projects__img" srcset="./img/projec/phone/pp1x-4.jpg 450w , 
+                            ./img/projec/phone/pp2x-4.jpg 900w, 
+                            ./img/projec/tablet/pt1x-4.jpg 354w, 
+                            ./img/projec/tablet/pt2x-4.jpg 708w, 
+                            ./img/projec/pd1x-4.jpg 370w, 
+                            ./img/projec/pd2x-4.jpg 740w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="./img/projec/pd1x-4.jpg" alt="Проект 5">
+                            <div class="projects__notes">
+                                <h3 class="projects__title">Проєкт Boxes</h3>
+                                <p class="description">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__type">
+                        <a href="#">
+                            <img class="projects__img" srcset="./img/projec/phone/pp1x-5.jpg 450w , 
+                            ./img/projec/phone/pp2x-5.jpg 900w, 
+                            ./img/projec/tablet/pt1x-5.jpg 354w, 
+                            ./img/projec/tablet/pt2x-5.jpg 708w, 
+                            ./img/projec/pd1x-5.jpg 370w, 
+                            ./img/projec/pd2x-5.jpg 740w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="./img/projec/pd1x-5.jpg" alt="Проект 6">
+                            <div class="projects__notes">
+                                <h3 class="projects__title">Inspiration has no Borders</h3>
+                                <p class="description">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__type">
+                        <a href="#">
+                            <img class="projects__img" srcset="./img/projec/phone/pp1x-6.jpg 450w , 
+                            ./img/projec/phone/pp2x-6.jpg 900w, 
+                            ./img/projec/tablet/pt1x-6.jpg 354w, 
+                            ./img/projec/tablet/pt2x-6.jpg 708w, 
+                            ./img/projec/pd1x-6.jpg 370w, 
+                            ./img/projec/pd2x-6.jpg 740w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="./img/projec/pd1x-6.jpg" alt="Проект 7">
+                            <div class="projects__notes">
+                                <h3 class="projects__title">Видання Limited Edition</h3>
+                                <p class="description">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__type">
+                        <a href="#">
+                            <img class="projects__img" srcset="./img/projec/phone/pp1x-7.jpg 450w , 
+                            ./img/projec/phone/pp2x-7.jpg 900w, 
+                            ./img/projec/tablet/pt1x-7.jpg 354w, 
+                            ./img/projec/tablet/pt2x-7.jpg 708w, 
+                            ./img/projec/pd1x-7.jpg 370w, 
+                            ./img/projec/pd2x-7.jpg 740w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="./img/projec/pd1x-7.jpg" alt="Проект 8">
+                            <div class="projects__notes">
+                                <h3 class="projects__title">Проєкт LAB</h3>
+                                <p class="description">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="projects__type">
+                        <a href="#">
+                            <img class="projects__img" srcset="./img/projec/phone/pp1x-8.jpg 450w , 
+                            ./img/projec/phone/pp2x-8.jpg 900w, 
+                            ./img/projec/tablet/pt1x-8.jpg 354w, 
+                            ./img/projec/tablet/pt2x-8.jpg 708w, 
+                            ./img/projec/pd1x-8.jpg 370w, 
+                            ./img/projec/pd2x-8.jpg 740w"
+                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="./img/projec/pd1x-8.jpg" alt="Проект 9">
+                            <div class="projects__notes">
+                                <h3 class="projects__title">Growing Business</h3>
+                                <p class="description">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container--flex">
+            <div class="footer__main">
+                <a class="logo logo--white logo--smal" href="#"><span class="logo--blue">Web</span>Studio</a>
+
+                <address class="address">
+                    <ul class="address__list">
+                        <li class="address__type">
+                            <p class="address__building">м. Київ, пр-т Лесі Українки, 26</p>
+                        </li>
+
+                        <li class="address__type">
+                            <a href="mailto:info@devstudio.com" class="link address__cont">info@devstudio.com</a>
+                        </li>
+
+                        <li class="address__type">
+                            <a href="tel:+380961111111" class="link address__cont">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
+            <div class="join">
+                <p class="join__title">Приєднуйтесь</p>
+                <ul class="join__list">
+                    <li class="join__type">
+                        <a href="" class="join__icon" aria-label="Instagram">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./img/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join__type">
+                        <a href="" class="join__icon" aria-label="Facebook">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./img/icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join__type">
+                        <a href="" class="join__icon" aria-label="Twitter">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./img/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join__type">
+                        <a href="" class="join__icon" aria-label="Linkedin">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./img/icons.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="sub js-speaker-form">
+                <label class="sub__lb" for="email"> Підпишіться на розсилку</label>
+                <div class="summon">
+                    <input class="sub__in" name="email" type="email" id="email" placeholder="E-mail" required>
+                    <button class=" button sub__btn" type="submit">Підписатися
+                        <svg class="send" width="24" height="24">
+                            <use href="./img/icons.svg#send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40">
+                <use class="menu__icon-close" href="./img/icons.svg#close-mobile"></use>
+            </svg>
+        </button>
+
+        <ul class="navigation">
+            <li class="navigation__type"><a href="./index.html" class="link navigation__link">Студія</a></li>
+            <li class="navigation__type"><a href="./portfolio.html"
+                    class="link navigation__link  navigation__link--active">Портфоліо</a></li>
+            <li class="navigation__type"><a href="" class="link navigation__link">Контакти</a></li>
+        </ul>
+
+        <ul class="contacts">
+            <li class="contacts__type"><a href="tel:+380961111111" class="link contacts__link contacts__link--blue">+38
+                    096 111 11 11</a></li>
+            <li class="contacts__type"><a href="mailto:info@devstudio.com"
+                    class="link contacts__link">info@devstudio.com</a></li>
+        </ul>
+
+        <ul class="media">
+            <li class="media__type"><a href="#" class="link media__link">Instagram</a></li>
+            <li class="media__type"><a href="#" class="link media__link">Twitter</a></li>
+            <li class="media__type"><a href="#" class="link media__link">Facebook</a></li>
+            <li class="media__type"><a href="#" class="link media__link">LinkedIn</a></li>
+        </ul>
+    </div>
+
+    </script>
+    <script src="./js/mobile-menu.js"></script>
+
+</body>
+</html>
