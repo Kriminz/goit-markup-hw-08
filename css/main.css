@@ -61,7 +61,6 @@ svg {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -314,7 +313,7 @@ svg {
 
 .hero--overlay {
   max-width: 1600px;
-  height: 600px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -604,7 +603,11 @@ svg {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .benefists__title {
+    text-align: center;
+  }
 }
 
 .benefists__desc {
@@ -760,8 +763,6 @@ svg {
 
 .team__name {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 0.9;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -770,9 +771,17 @@ svg {
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .team__name {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
 @media screen and (min-width: 1200px) {
   .team__name {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 0.9;
   }
 }
 
@@ -856,13 +865,24 @@ svg {
 }
 
 .clients {
-  margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+}
+@media screen and (max-width: 1199px) {
+  .clients {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .clients__list {
@@ -1083,6 +1103,12 @@ svg {
           align-items: center;
   margin-left: auto;
 }
+@media screen and (max-width: 767px) {
+  .sub {
+    width: 100%;
+    display: inline-block;
+  }
+}
 @media screen and (max-width: 1199px) {
   .sub {
     margin-top: 60px;
@@ -1102,9 +1128,6 @@ svg {
 }
 
 .sub__lb {
-  position: absolute;
-  top: 0;
-  left: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1112,14 +1135,36 @@ svg {
   text-transform: uppercase;
   color: var(--second-color);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .sub__lb {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sub__lb {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .sub__lb {
     -webkit-transform: translateX(60%);
             transform: translateX(60%);
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .summon {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .summon {
     margin-top: 40px;
   }
@@ -1154,7 +1199,13 @@ svg {
     margin-right: 12px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .sub__in {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .sub__in {
     width: 450px;
   }
